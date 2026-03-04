@@ -19,4 +19,46 @@ public class PlantillaEmail implements Prototipo{
     public Prototipo clonar() {
         return new PlantillaEmail(this.asunto, this.cuerpoHtml, new ArrayList <>(this.destinatarios), new ArrayList<>(this.etiquetas));
     }
+
+    @Override
+    public String toString() {
+        return "PlantillaEmail{" +
+                "asunto='" + asunto + '\'' +
+                ", cuerpoHtml='" + cuerpoHtml + '\'' +
+                ", destinatarios=" + destinatarios +
+                ", etiquetas=" + etiquetas +
+                '}';
+    }
+
+    public String getAsunto() {
+        return asunto;
+    }
+
+    public void setAsunto(String asunto) {
+        this.asunto = asunto;
+    }
+
+    public String getCuerpoHtml() {
+        return cuerpoHtml;
+    }
+
+    public void setCuerpoHtml(String cuerpoHtml) {
+        this.cuerpoHtml = cuerpoHtml;
+    }
+
+    public List<String> getDestinatarios() {
+        return destinatarios;
+    }
+
+    public void setDestinatarios(List<String> destinatarios) {
+        this.destinatarios = destinatarios;
+    }
+
+    public List<String> getEtiquetas() {
+        return etiquetas;
+    }
+
+    public void setEtiquetas(List<String> etiquetas) {
+        this.etiquetas = etiquetas;
+    }
 }
