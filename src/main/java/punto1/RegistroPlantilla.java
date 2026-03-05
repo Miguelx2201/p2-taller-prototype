@@ -1,4 +1,4 @@
-package model;
+package punto1;
 
 import java.util.HashMap;
 import java.util.Map;
